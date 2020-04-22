@@ -4,13 +4,13 @@ public class Question2
 {
   public static void main(String[] args)
   {
-    /**
-     * Prompts user for height and weight, calculate and print out the height and weight of the user
-     * 
-     * Hint: in.nextDouble() to read double
-     */
-     
     Scanner in = new Scanner(System.in);
+    System.out.print("Please enter height (cm): ");
     double height = in.nextDouble();
+
+    System.out.print("Please enter weight (kg): ");
+    double weight = in.nextDouble();
+
+    System.out.format("Height : %.2f cm\nWeight : %.2f kg", height, weight);
   }
 }
