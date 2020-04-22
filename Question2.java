@@ -10,7 +10,9 @@ public class Question2
 
     System.out.print("Please enter weight (kg): ");
     double weight = in.nextDouble();
+    
+    double bmi = weight/(height * height);
 
-    System.out.format("Height : %.2f cm\nWeight : %.2f kg", height, weight);
+    System.out.format("Height : %.2f m \nWeight : %.2f kg \nBMI : %.2f", height, weight, bmi);
   }
 }
